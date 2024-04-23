@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="HotelBooking.model.User, HotelBooking" table="[dbo].[User]">
+		<id name="Id" column="id">
+			<generator class="identity"/>
+		</id>
+		<property name="Username" column="username" />
+		<property name="Password" column="password" />
+		<property name="FirstName" column="firstName" />
+		<property name="LastName" column="lastName" />
+		<property name="DateOfBirth" column="dateOfBirth" />
+		<property name="Address" column="adress" />
+	</class>
+</hibernate-mapping>
