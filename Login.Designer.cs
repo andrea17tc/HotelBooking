@@ -74,6 +74,7 @@
             label3.Size = new Size(70, 20);
             label3.TabIndex = 3;
             label3.Text = "Password";
+            
             // 
             // textBoxUsername
             // 
@@ -88,6 +89,7 @@
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.Size = new Size(125, 27);
             textBoxPassword.TabIndex = 5;
+            textBoxPassword.PasswordChar = '*';
             // 
             // label4
             // 

@@ -10,37 +10,40 @@ public class Hotel : Entity<int>
 {
     string name;
     string location;
-    string adress;
+    string address;
     int noRooms;
 
     // Constructor
-    public Hotel(string name, string location, string adress, int noRooms)
+    public Hotel()
+    {
+    }
+    public Hotel(string name, string location, string address, int noRooms)
     {
         this.name = name;
         this.location = location;
-        this.adress = adress;
+        this.address = address;
         this.noRooms = noRooms;
     }
 
     // Getters and setters
-    public string Name
+    public virtual string Name
     {
         get { return name; }
         set { name = value; }
     }
-    public string Location
+    public virtual string Location
     {
         get { return location; }
         set { location = value; }
     }
 
-    public string Adress
+    public virtual string Address
     {
-        get { return adress; }
-        set { adress = value; }
+        get { return address; }
+        set { address = value; }
     }
 
-    public int NoRooms
+    public virtual int NoRooms
     {
         get { return noRooms; }
         set { noRooms = value; }
@@ -49,7 +52,7 @@ public class Hotel : Entity<int>
     // Override ToString
     public override string ToString()
     {
-        return $"Hotel {name}, location={location}, adress={adress}, noRooms={noRooms}";
+        return $"Hotel {name}, location={location}, adress={address}, noRooms={noRooms}";
     }
 
     // Override Equals
@@ -63,6 +66,11 @@ public class Hotel : Entity<int>
 
         Hotel hotel = (Hotel)obj;
         return Equals(Id, hotel.Id);
+    }
+
+    public override int GetHashCode()
+    {
+        throw new NotImplementedException();
     }
 }
 

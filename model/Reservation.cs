@@ -10,11 +10,11 @@ public class Reservation : Entity<int>
 {
     int userID;
     int offerID;
-    string date;
+    DateTime date;
     int noRooms;
 
     // Constructor
-    public Reservation(int userID, int offerID, string date, int noRooms)
+    public Reservation(int userID, int offerID, DateTime date, int noRooms)
     {
         this.userID = userID;
         this.offerID = offerID;
@@ -35,7 +35,7 @@ public class Reservation : Entity<int>
         set { offerID = value; }
     }
 
-    public string Date
+    public DateTime Date
     {
         get { return date; }
         set { date = value; }

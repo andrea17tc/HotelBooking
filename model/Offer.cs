@@ -9,11 +9,15 @@ namespace HotelBooking.model;
 public class Offer : Entity<int>
 {
     Hotel hotel;
-    string startDate;
+    DateOnly startDate;
     int noNights;
 
     // Constructor
-    public Offer(Hotel hotel, string date, int noNights)
+
+    public Offer()
+    {
+    }
+    public Offer(Hotel hotel, DateOnly date, int noNights)
     {
         this.hotel = hotel;
         this.startDate = date;
@@ -22,17 +26,23 @@ public class Offer : Entity<int>
 
     // Getters and setters
 
-    public Hotel Hotel
+    public virtual Hotel Hotel
     {
         get { return hotel; }
         set { hotel = value; }
     }
-    public string StartDate
+
+    public virtual int HotelId
+    {
+        get { return hotel.Id; }
+        set { hotel.Id = value; }
+    }
+    public virtual DateOnly StartDate
     {
         get { return startDate; }
         set { startDate = value; }
     }
-    public int NoNights
+    public virtual int NoNights
     {
         get { return noNights; }
         set { noNights = value; }

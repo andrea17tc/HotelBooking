@@ -1,4 +1,5 @@
 ﻿using HotelBooking.service;
+using log4net;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace HotelBooking
     {
         private Service service;
         private Login loginWindow;
+        private static readonly ILog Log = LogManager.GetLogger(typeof(SignUp));
+
         public SignUp(Service s, Login loginWindow)
         {
             service = s;
@@ -89,6 +92,7 @@ namespace HotelBooking
                 if (service.findByUsername(username))
                 {
                     MessageBox.Show("Username already exists");
+                    Log.Info("Username already exists");
                     return;
                 }
                 string password = textBoxPassword.Text;
@@ -106,11 +110,13 @@ namespace HotelBooking
                 {
                     service.createUser(username, password, firstName, lastName, dateOfBirth, address);
                     MessageBox.Show("Account created successfully");
+                    Log.Info("Account created successfully");
                     loginWindow.Show();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error creating account");
+                    Log.Error("Error creating account", ex);
                     return;
                 }
                 this.Close();

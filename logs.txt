@@ -1,3 +1,555 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<configuration>
-</configuration>
+﻿2024-05-13 22:06:37,890 [1] INFO  HotelBooking.Program - Application started
+2024-05-13 22:06:37,927 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-13 22:06:37,936 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-13 22:06:46,214 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username ana
+2024-05-13 22:10:51,547 [1] INFO  HotelBooking.Program - Application started
+2024-05-13 22:10:51,583 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-13 22:10:51,593 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-13 22:11:44,925 [1] INFO  HotelBooking.Program - Application started
+2024-05-13 22:11:44,965 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-13 22:11:44,975 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-13 22:11:53,531 [1] INFO  HotelBooking.Program - Application ended
+2024-05-14 14:25:31,907 [1] INFO  HotelBooking.Program - Application started
+2024-05-14 14:25:31,951 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-14 14:25:31,963 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 14:26:01,347 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username ana
+2024-05-14 14:26:04,293 [1] INFO  HotelBooking.Login - Login successful
+2024-05-14 14:26:06,814 [1] INFO  HotelBooking.Program - Application ended
+2024-05-14 15:25:44,189 [1] INFO  HotelBooking.Program - Application started
+2024-05-14 15:25:44,243 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-14 15:25:44,257 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 15:25:46,420 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-14 15:25:46,420 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 15:25:48,884 [1] INFO  HotelBooking.Program - Application ended
+2024-05-14 15:28:49,032 [1] INFO  HotelBooking.Program - Application started
+2024-05-14 15:28:49,072 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-14 15:28:49,081 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 15:28:50,906 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-14 15:28:50,906 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 15:28:58,367 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-14 15:29:00,850 [1] INFO  HotelBooking.Login - Login successful
+2024-05-14 15:29:50,954 [1] INFO  HotelBooking.Program - Application started
+2024-05-14 15:29:50,996 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-14 15:29:51,005 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 15:29:52,616 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-14 15:29:52,616 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 15:29:59,660 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-14 15:30:02,181 [1] INFO  HotelBooking.Login - Login successful
+2024-05-14 15:30:02,196 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-14 15:30:02,210 [1] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: select hotel0_.id as id1_1_, hotel0_.name as name2_1_, hotel0_.location as location3_1_, hotel0_.address as address4_1_, hotel0_.noRooms as norooms5_1_ from Hotel hotel0_
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'address'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at NHibernate.AdoNet.AbstractBatcher.DoExecuteReader(DbCommand cmd)
+ClientConnectionId:da927b6d-4efd-446e-a5d5-a4d7355d3879
+Error Number:207,State:1,Class:16
+2024-05-14 15:30:02,260 [1] ERROR NHibernate.Util.ADOExceptionReporter - Invalid column name 'address'.
+2024-05-14 15:30:02,262 [1] ERROR NHibernate.Util.ADOExceptionReporter - Invalid column name 'address'.
+2024-05-14 15:30:02,263 [1] ERROR NHibernate.Util.ADOExceptionReporter - Invalid column name 'address'.
+2024-05-14 15:31:45,588 [1] INFO  HotelBooking.Program - Application started
+2024-05-14 15:31:45,630 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-14 15:31:45,640 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 15:31:47,382 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-14 15:31:47,382 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 15:31:54,048 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-14 15:31:56,589 [1] INFO  HotelBooking.Login - Login successful
+2024-05-14 15:31:56,603 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-14 15:34:10,319 [1] INFO  HotelBooking.repository.UserRepository - Saving hotel with name Grand Hotel Et Des Palmes
+2024-05-14 15:34:10,380 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-14 15:35:08,584 [1] INFO  HotelBooking.Program - Application started
+2024-05-14 15:35:08,623 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-14 15:35:08,632 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 15:35:10,364 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-14 15:35:10,364 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 15:35:17,649 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-14 15:35:19,918 [1] INFO  HotelBooking.Login - Login successful
+2024-05-14 15:35:19,933 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-14 15:36:06,361 [1] INFO  HotelBooking.Program - Application started
+2024-05-14 15:36:06,400 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-14 15:36:06,409 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 15:36:08,061 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-14 15:36:08,061 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 15:36:11,295 [1] INFO  HotelBooking.Program - Application ended
+2024-05-14 15:36:44,992 [1] INFO  HotelBooking.Program - Application started
+2024-05-14 15:36:45,033 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-14 15:36:45,044 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 15:36:46,707 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-14 15:36:46,707 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-14 15:36:56,709 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-14 15:36:59,269 [1] INFO  HotelBooking.Login - Login successful
+2024-05-14 15:36:59,283 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-14 15:37:05,855 [1] INFO  HotelBooking.repository.UserRepository - Updating hotel with id 1
+2024-05-14 15:37:05,938 [1] INFO  HotelBooking.repository.UserRepository - Hotel with id 1 updated successfully
+2024-05-14 15:37:05,938 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-14 15:37:12,920 [1] INFO  HotelBooking.repository.UserRepository - Updating hotel with id 1
+2024-05-14 15:37:12,927 [1] INFO  HotelBooking.repository.UserRepository - Hotel with id 1 updated successfully
+2024-05-14 15:37:12,927 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-14 15:37:21,102 [1] INFO  HotelBooking.repository.UserRepository - Deleting hotel with id 1
+2024-05-14 15:37:21,124 [1] INFO  HotelBooking.repository.UserRepository - Hotel with id 1 deleted successfully
+2024-05-14 15:37:21,124 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-14 15:37:25,258 [1] INFO  HotelBooking.repository.UserRepository - Saving hotel with name Grand Hotel Et Des Palmes
+2024-05-14 15:37:25,278 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-15 19:46:58,423 [1] INFO  HotelBooking.Program - Application started
+2024-05-15 19:46:58,723 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-15 19:46:58,801 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-15 19:47:01,010 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-15 19:47:01,010 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-15 19:47:15,694 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-15 19:47:19,070 [1] INFO  HotelBooking.Login - Login successful
+2024-05-15 19:47:19,096 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-15 20:59:50,451 [1] INFO  HotelBooking.Program - Application started
+2024-05-15 20:59:50,515 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-15 20:59:50,529 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-15 20:59:52,524 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-15 20:59:52,524 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-15 20:59:52,556 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-15 20:59:52,910 [1] ERROR NHibernate.Cfg.Configuration - An association from the table Offer refers to an unmapped class: HotelBooking.model.Hotel
+NHibernate.MappingException: An association from the table Offer refers to an unmapped class: HotelBooking.model.Hotel
+2024-05-15 20:59:52,912 [1] ERROR NHibernate.Tool.hbm2ddl.SchemaUpdate - could not complete schema update
+NHibernate.MappingException: An association from the table Offer refers to an unmapped class: HotelBooking.model.Hotel
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.SecondPassCompileForeignKeys(Table table, ISet`1 done)
+   at NHibernate.Cfg.Configuration.SecondPassCompile()
+   at NHibernate.Cfg.Configuration.GenerateSchemaUpdateScript(Dialect dialect, IDatabaseMetadata databaseMetadata)
+   at NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+2024-05-15 20:59:52,957 [1] ERROR NHibernate.Cfg.Configuration - An association from the table Offer refers to an unmapped class: HotelBooking.model.Hotel
+NHibernate.MappingException: An association from the table Offer refers to an unmapped class: HotelBooking.model.Hotel
+2024-05-15 21:03:21,404 [1] INFO  HotelBooking.Program - Application started
+2024-05-15 21:03:21,447 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-15 21:03:21,456 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-15 21:03:23,313 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-15 21:03:23,313 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-15 21:03:23,341 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-15 21:10:11,049 [1] INFO  HotelBooking.Program - Application started
+2024-05-15 21:10:11,092 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-15 21:10:11,102 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-15 21:10:12,865 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-15 21:10:12,865 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-15 21:10:12,899 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-15 21:11:17,835 [1] INFO  HotelBooking.Program - Application started
+2024-05-15 21:11:17,881 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-15 21:11:17,890 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-15 21:11:19,544 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-15 21:11:19,544 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-15 21:11:19,580 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-15 21:11:45,026 [1] INFO  HotelBooking.Program - Application started
+2024-05-15 21:11:45,067 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-15 21:11:45,078 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-15 21:11:46,893 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-15 21:11:46,893 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-15 21:11:46,927 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-15 21:13:14,355 [1] INFO  HotelBooking.Program - Application started
+2024-05-15 21:13:14,395 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-15 21:13:14,403 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-15 21:13:16,097 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-15 21:13:16,097 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-15 21:13:16,128 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:04:29,289 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:04:29,758 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:04:29,847 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:04:34,237 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:04:34,237 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:04:34,273 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:09:43,724 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:09:43,764 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:09:43,780 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:09:45,857 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:09:45,857 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:09:45,886 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:09:52,942 [1] INFO  HotelBooking.Program - Application ended
+2024-05-16 20:11:45,646 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:11:45,686 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:11:45,697 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:11:47,869 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:11:47,869 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:11:47,902 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:12:38,302 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:12:41,653 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:12:41,686 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:12:45,249 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:13:14,156 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:13:14,244 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:13:14,266 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:13:16,216 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:13:16,217 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:13:16,248 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:13:30,823 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:13:33,297 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:13:33,315 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:13:44,482 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:15:19,687 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:15:19,731 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:15:19,745 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:15:21,688 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:15:21,688 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:15:21,727 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:15:31,480 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:15:34,799 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:15:34,823 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:15:37,351 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:15:53,331 [1] INFO  HotelBooking.repository.UserRepository - Finding hotel with id 2
+2024-05-16 20:15:53,351 [1] INFO  HotelBooking.repository.UserRepository - Saving offer
+2024-05-16 20:20:17,513 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:20:17,572 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:20:17,587 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:20:19,436 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:20:19,436 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:20:19,467 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:20:31,196 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:20:34,137 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:20:34,157 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:20:37,215 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:20:44,217 [1] INFO  HotelBooking.repository.UserRepository - Finding hotel with id 2
+2024-05-16 20:20:44,240 [1] INFO  HotelBooking.repository.UserRepository - Saving offer
+2024-05-16 20:25:32,320 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:25:32,365 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:25:32,377 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:25:34,290 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:25:34,290 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:25:34,325 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:25:46,653 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:25:49,163 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:25:49,176 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:25:51,687 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:26:01,046 [1] INFO  HotelBooking.repository.UserRepository - Finding hotel with id 2
+2024-05-16 20:26:01,062 [1] INFO  HotelBooking.repository.UserRepository - Saving offer
+2024-05-16 20:26:01,125 [1] ERROR NHibernate.AdoNet.AbstractBatcher - Could not execute query: INSERT INTO Offer (hotelID, StartDate) VALUES (@p0, @p1); select SCOPE_IDENTITY()
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'noNights', table 'HotelBooking.dbo.Offer'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at NHibernate.AdoNet.AbstractBatcher.DoExecuteReader(DbCommand cmd)
+ClientConnectionId:e32152ef-b35d-46ad-972e-30f048f197b0
+Error Number:515,State:2,Class:16
+2024-05-16 20:26:01,186 [1] ERROR NHibernate.Util.ADOExceptionReporter - Cannot insert the value NULL into column 'noNights', table 'HotelBooking.dbo.Offer'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+2024-05-16 20:26:50,626 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:26:50,692 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:26:50,708 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:26:52,785 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:26:52,786 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:26:52,817 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:26:54,576 [1] INFO  HotelBooking.Program - Application ended
+2024-05-16 20:28:00,070 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:28:00,123 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:28:00,138 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:28:02,005 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:28:02,005 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:28:02,036 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:28:09,139 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:28:12,021 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:28:12,043 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:28:14,368 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:28:21,741 [1] INFO  HotelBooking.repository.UserRepository - Finding hotel with id 2
+2024-05-16 20:28:21,759 [1] INFO  HotelBooking.repository.UserRepository - Saving offer
+2024-05-16 20:29:28,868 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:29:28,908 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:29:28,917 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:29:31,125 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:29:31,125 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:29:31,162 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:29:37,999 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:29:40,421 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:29:40,444 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:29:42,465 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:37:14,362 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:37:14,416 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:37:14,430 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:37:16,324 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:37:16,324 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:37:16,356 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:37:25,028 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:37:27,420 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:37:27,435 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:37:29,984 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:37:39,084 [1] INFO  HotelBooking.repository.UserRepository - Finding hotel with id 2
+2024-05-16 20:37:39,096 [1] INFO  HotelBooking.repository.UserRepository - Updating offer
+2024-05-16 20:37:39,164 [1] ERROR NHibernate.Event.Default.AbstractFlushingEventListener - Could not synchronize database state with session
+NHibernate.StaleStateException: Batch update returned unexpected row count from update; actual row count: 0; expected: 1
+[ UPDATE Offer SET hotelID = @p0, StartDate = @p1, noNights = @p2 WHERE Id = @p3 ]
+
+   at NHibernate.AdoNet.Expectations.VerifyOutcomeBatched(Int32 expectedRowCount, Int32 rowCount, DbCommand statement)
+   at NHibernate.AdoNet.GenericBatchingBatcher.DoExecuteBatch(DbCommand ps)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(DbCommand ps)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   at NHibernate.Engine.ActionQueue.ExecuteActions[T](List`1 list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2024-05-16 20:47:26,199 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:47:26,239 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:47:26,247 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:47:27,889 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:47:27,889 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:47:27,917 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:47:48,342 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:47:50,494 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:47:50,516 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:47:54,173 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:49:31,480 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:49:31,518 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:49:31,528 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:49:33,210 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:49:33,210 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:49:33,237 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:49:43,878 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:49:46,946 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:49:46,960 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:49:48,864 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:50:58,854 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:50:58,895 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:50:58,905 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:51:00,561 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:51:00,561 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:51:00,588 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:51:09,019 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:51:09,745 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:51:09,759 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:51:13,517 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:51:39,060 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:51:39,100 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:51:39,109 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:51:40,826 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:51:40,826 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:51:40,858 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:51:44,254 [1] INFO  HotelBooking.Program - Application ended
+2024-05-16 20:52:18,198 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:52:18,235 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:52:18,245 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:52:19,964 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:52:19,964 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:52:19,995 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:52:28,604 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:52:29,195 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:52:29,215 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:52:31,231 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:52:58,432 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:52:58,471 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:52:58,481 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:53:00,158 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:53:00,158 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:53:00,191 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:53:08,401 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:53:08,989 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:53:09,005 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:53:13,493 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:55:01,830 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:55:01,864 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:55:01,872 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:55:03,483 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:55:03,483 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:55:03,509 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:55:10,105 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:55:10,672 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:55:10,686 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:55:12,553 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:55:33,667 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:55:33,708 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:55:33,717 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:55:35,499 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:55:35,499 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:55:35,566 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:55:42,717 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:55:43,316 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:55:43,329 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:55:45,122 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:56:05,309 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:56:05,347 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:56:05,356 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:56:07,107 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:56:07,107 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:56:07,136 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:56:19,933 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:56:20,526 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:56:20,541 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:56:22,298 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:56:37,007 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:56:37,045 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:56:37,054 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:56:38,822 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:56:38,822 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:56:38,885 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:56:48,431 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:56:49,110 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:56:49,126 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:56:51,365 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:57:08,299 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:57:08,341 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:57:08,350 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:57:10,051 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:57:10,051 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:57:10,084 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:57:22,844 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:57:23,413 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:57:23,427 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:57:26,430 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:57:52,888 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:57:52,928 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:57:52,937 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:57:54,589 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:57:54,590 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:57:54,653 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:58:02,367 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:58:02,970 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:58:02,983 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:58:08,783 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 20:59:33,602 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 20:59:33,644 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 20:59:33,653 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:59:35,271 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 20:59:35,271 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 20:59:35,299 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 20:59:43,216 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 20:59:43,790 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 20:59:43,806 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 20:59:46,186 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:01:04,276 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 21:01:04,319 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 21:01:04,329 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:01:05,980 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 21:01:05,980 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:01:06,007 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 21:01:13,546 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 21:01:14,148 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 21:01:14,165 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 21:01:16,637 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:02:26,691 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 21:02:26,728 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 21:02:26,737 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:02:28,499 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 21:02:28,499 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:02:28,528 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 21:02:37,292 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 21:02:37,866 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 21:02:37,883 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 21:02:40,465 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:02:51,060 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 21:02:51,099 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 21:02:51,109 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:02:52,775 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 21:02:52,775 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:02:52,805 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 21:03:02,200 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 21:03:02,804 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 21:03:02,825 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 21:03:04,977 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:04:30,708 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 21:04:30,746 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 21:04:30,755 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:04:32,446 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 21:04:32,446 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:04:32,484 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 21:04:41,404 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 21:04:41,983 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 21:04:41,997 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 21:04:43,533 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:07:25,457 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 21:07:25,503 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 21:07:25,511 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:07:27,170 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 21:07:27,170 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:07:27,198 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 21:07:36,184 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 21:07:36,924 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 21:07:36,938 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 21:07:39,626 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:07:57,965 [1] INFO  HotelBooking.repository.UserRepository - Finding hotel with id 2
+2024-05-16 21:07:57,979 [1] INFO  HotelBooking.repository.UserRepository - Updating offer with id 3
+2024-05-16 21:07:57,982 [1] ERROR HotelBooking.repository.UserRepository - Offer with id 3 not found
+2024-05-16 21:09:16,895 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 21:09:16,937 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 21:09:16,947 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:09:18,622 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 21:09:18,622 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:09:18,658 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 21:09:27,225 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 21:09:27,817 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 21:09:27,831 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 21:09:30,150 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:09:55,445 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 21:09:55,488 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 21:09:55,499 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:09:57,166 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 21:09:57,166 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:09:57,195 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 21:10:13,669 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 21:10:14,242 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 21:10:14,256 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 21:10:19,151 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:11:33,394 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 21:11:33,434 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 21:11:33,444 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:11:35,098 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 21:11:35,098 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:11:35,126 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 21:11:42,213 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 21:11:42,790 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 21:11:42,804 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 21:11:45,388 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:11:54,140 [1] INFO  HotelBooking.repository.UserRepository - Finding hotel with id 2
+2024-05-16 21:11:54,154 [1] INFO  HotelBooking.repository.UserRepository - Updating offer with id 2
+2024-05-16 21:11:54,223 [1] INFO  HotelBooking.repository.UserRepository - Offer with id 2 updated successfully
+2024-05-16 21:12:15,954 [1] INFO  HotelBooking.repository.UserRepository - Finding hotel with id 2
+2024-05-16 21:12:15,959 [1] INFO  HotelBooking.repository.UserRepository - Deleting offer with id 0
+2024-05-16 21:12:15,961 [1] ERROR HotelBooking.repository.UserRepository - Offer with id 0 not found
+2024-05-16 21:13:04,088 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 21:13:04,154 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 21:13:04,166 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:13:05,810 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 21:13:05,810 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:13:05,837 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 21:13:13,024 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 21:13:13,618 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 21:13:13,631 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 21:13:16,062 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:13:21,784 [1] INFO  HotelBooking.repository.UserRepository - Finding hotel with id 2
+2024-05-16 21:13:21,799 [1] INFO  HotelBooking.repository.UserRepository - Deleting offer with id 2
+2024-05-16 21:13:21,879 [1] INFO  HotelBooking.repository.UserRepository - Offer with id 2 deleted successfully
+2024-05-16 21:13:52,444 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 21:13:55,592 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:15:51,836 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 21:15:51,872 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 21:15:51,881 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:15:53,676 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 21:15:53,676 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:15:53,710 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 21:16:01,789 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 21:16:02,384 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 21:16:02,397 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 21:16:04,541 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:16:31,247 [1] INFO  HotelBooking.Program - Application started
+2024-05-16 21:16:31,291 [1] INFO  HotelBooking.repository.UserRepository - Creating UserRepository
+2024-05-16 21:16:31,301 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:16:32,947 [1] INFO  HotelBooking.repository.UserRepository - Creating HotelRepository
+2024-05-16 21:16:32,947 [1] INFO  HotelBooking.utils.SessionFactory - Creating SessionFactory
+2024-05-16 21:16:32,980 [1] INFO  HotelBooking.repository.UserRepository - Creating OfferRepository
+2024-05-16 21:16:44,670 [1] INFO  HotelBooking.repository.UserRepository - Finding user with username admin
+2024-05-16 21:16:45,264 [1] INFO  HotelBooking.Login - Login successful
+2024-05-16 21:16:45,278 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels
+2024-05-16 21:16:48,100 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:16:56,378 [1] INFO  HotelBooking.repository.UserRepository - Finding hotel with id 2
+2024-05-16 21:16:56,398 [1] INFO  HotelBooking.repository.UserRepository - Saving offer
+2024-05-16 21:16:56,468 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:17:20,367 [1] INFO  HotelBooking.repository.UserRepository - Finding hotel with id 2
+2024-05-16 21:17:20,369 [1] INFO  HotelBooking.repository.UserRepository - Saving offer
+2024-05-16 21:17:20,377 [1] INFO  HotelBooking.repository.UserRepository - Finding all offers for hotel with id 2
+2024-05-16 21:17:27,164 [1] INFO  HotelBooking.repository.UserRepository - Finding all hotels

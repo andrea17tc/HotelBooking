@@ -1,5 +1,6 @@
 ﻿using HotelBooking.model;
 using HotelBooking.repository;
+using log4net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,14 @@ namespace HotelBooking.service
     public class Service
     {
         UserRepository userRepository;
-        public Service(UserRepository userRepository)
+        HotelRepository hotelRepository;
+        OfferRepository offerRepository;
+
+        public Service(UserRepository userRepository, HotelRepository hotelRepository, OfferRepository offerRepository)
         {
             this.userRepository = userRepository;
+            this.hotelRepository = hotelRepository;
+            this.offerRepository = offerRepository;
         }
 
         public int login(string username, string password)
@@ -44,5 +50,54 @@ namespace HotelBooking.service
             User user =new User(username, password, firstName, lastName, dateOfBirth, address); 
             userRepository.save(user);
         }
+
+        public List<Hotel> FindAllHotels()
+        {
+            return hotelRepository.findAll().ToList();
+        }
+
+        public void AddHotel(Hotel hotel)
+        {
+            hotelRepository.save(hotel);
+        }
+
+        public void UpdateHotel(Hotel hotel)
+        {
+            hotelRepository.update(hotel);
+        }   
+
+        public void DeleteHotel(int id)
+        {
+            hotelRepository.delete(id);
+        }
+
+        public List<Offer> FindAllOffers(int hotelId)
+        {
+            return offerRepository.FindAll(hotelId).ToList();
+        }
+
+        public void AddOffer(int hotelId, DateOnly date, int noNights)
+        {
+            Hotel hotel = hotelRepository.findOne(hotelId);
+            Offer offer = new Offer(hotel, date, noNights);
+            offerRepository.Save(offer);
+        }
+
+        public void UpdateOffer(int id, int hotelId, DateOnly date, int noNights)
+        {
+            Hotel hotel = hotelRepository.findOne(hotelId);
+            Offer offer = new Offer(hotel, date, noNights);
+            offer.Id = id;
+            offerRepository.Update(offer);
+        }
+
+        public void DeleteOffer(int id, int hotelId, DateOnly date, int noNights)
+        {
+            Hotel hotel = hotelRepository.findOne(hotelId);
+            Offer offer = new Offer(hotel, date, noNights);
+            offer.Id = id;
+            offerRepository.Delete(offer);
+        }
+
     }
 }
