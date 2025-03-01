@@ -89,7 +89,7 @@ namespace HotelBooking
             if(valid)
             {
                 string username = textBoxUsername.Text;
-                if (service.findByUsername(username))
+                if (service.FindByUsername(username))
                 {
                     MessageBox.Show("Username already exists");
                     Log.Info("Username already exists");

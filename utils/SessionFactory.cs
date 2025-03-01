@@ -17,7 +17,7 @@ namespace HotelBooking.utils
         {
             Log.Info("Creating SessionFactory");
             var configuration = new NHibernate.Cfg.Configuration();
-            configuration.Configure("E:\\UBB\\ISS\\Project\\HotelBooking\\App.config"); // Load NHibernate configuration from a file
+            configuration.Configure("D:\\UBB\\Anul 2\\Sem 2\\ISS\\Project\\HotelBooking\\App.config"); // Load NHibernate configuration from a file
             
             // Add the mapping file to NHibernate configuration
             var mappingFilePath = ConfigurationManager.AppSettings["UserFilePath"];

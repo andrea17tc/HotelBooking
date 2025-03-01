@@ -15,12 +15,12 @@ public class Entity<ID>
         set { id = value; }
     }
 
-    public override bool Equals(object obj)
+    public override bool Equals(object? obj)
     {
         if (this == obj)
             return true;
 
-        if (!(obj is Entity<ID>))
+        if (obj is not Entity<ID>)
             return false;
 
         Entity<ID> entity = (Entity<ID>)obj;

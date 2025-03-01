@@ -32,6 +32,12 @@ public class Offer : Entity<int>
         set { hotel = value; }
     }
 
+    public virtual string HotelName
+    {
+        get { return hotel.Name; }
+        set { hotel.Name = value; }
+    }
+
     public virtual int HotelId
     {
         get { return hotel.Id; }

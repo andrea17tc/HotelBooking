@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace HotelBooking.repository
 {
-    public class OfferRepository 
+    public class OfferRepository : IRepository<int, Offer>
     {
         private readonly ISessionFactory sessionFactory;
         private static readonly ILog Log = LogManager.GetLogger(typeof(UserRepository));
@@ -21,7 +21,24 @@ namespace HotelBooking.repository
             this.sessionFactory = NHibernateHelper.CreateSessionFactory();
         }
 
-        public List<Offer> FindAll(int hotelID)
+        public IEnumerable<Offer> FindAll()
+        {
+            Log.Info("Finding all offers");
+            List<Offer> offers = new List<Offer>();
+            using (var session = sessionFactory.OpenSession())
+            {
+                var query = session.Query<Offer>();
+                foreach (Offer offer in query)
+                {
+                    NHibernateUtil.Initialize(offer.Hotel);
+                    offers.Add(offer);
+
+                }
+            }
+            return offers;
+        }
+
+        public IEnumerable<Offer> FindAllByHotel(int hotelID)
         {
             Log.Info("Finding all offers for hotel with id " + hotelID);
             List<Offer> offers = new List<Offer>();
@@ -35,6 +52,25 @@ namespace HotelBooking.repository
                 }
             }
             return offers;
+        }
+
+        public Offer FindOne(int id)
+        {
+            Log.Info("Finding offer with id " + id);
+            using (var session = sessionFactory.OpenSession())
+            {
+                Offer offer =  session.Get<Offer>(id);
+                if (offer != null)
+                {
+                    NHibernateUtil.Initialize(offer.Hotel);
+                    return offer;
+                }
+                else
+                {
+                    Log.Error("Offer with id " + id + " not found");
+                    throw new Exception("Offer not found");
+                }
+            }
         }
 
         public void Save(Offer entity)
@@ -80,13 +116,13 @@ namespace HotelBooking.repository
 
         }
 
-        public void Delete(Offer entity)
+        public void Delete(int id)
         {
-            Log.Info("Deleting offer with id " + entity.Id);
+            Log.Info("Deleting offer with id " + id);
             //delete offer from database
             using (var session = sessionFactory.OpenSession())
             {
-                var offerToDelete = session.Get<Offer>(entity.Id);
+                var offerToDelete = session.Get<Offer>(id);
                 if (offerToDelete != null)
                 {
                     using (var transaction = session.BeginTransaction())
@@ -94,16 +130,18 @@ namespace HotelBooking.repository
                         session.Delete(offerToDelete);
                         transaction.Commit();
                     }
-                    Log.Info("Offer with id " + entity.Id + " deleted successfully");
+                    Log.Info("Offer with id " + id + " deleted successfully");
                 }
                 else
                 {
-                    Log.Error("Offer with id " + entity.Id + " not found");
+                    Log.Error("Offer with id " + id + " not found");
                     throw new Exception("Offer not found");
                 }
             }
             
         }
+
+
 
 
     }

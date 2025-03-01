@@ -8,14 +8,14 @@ using System.Data.Common;
 
 namespace HotelBooking.mapping
 {
-
-    public class DateOnlyType : IUserType
+    public class DateTimeType : IUserType
     {
-        public SqlType[] SqlTypes {
+        public SqlType[] SqlTypes
+        {
             get { return new SqlType[] { new StringSqlType() }; }
         }
 
-        public Type ReturnedType => typeof(DateOnly);
+        public Type ReturnedType => typeof(DateTime);
 
         public bool IsMutable => false;
 
@@ -33,7 +33,7 @@ namespace HotelBooking.mapping
             else
             {
                 // Perform a shallow copy by creating a new DateOnly instance with the same value
-                return (DateOnly)value;
+                return (DateTime)value;
             }
         }
 
@@ -67,7 +67,7 @@ namespace HotelBooking.mapping
             else
             {
                 // Convert the string value from the database to a DateOnly instance
-                return DateOnly.Parse((string)value);
+                return DateTime.Parse((string)value);
             }
         }
 
@@ -82,7 +82,7 @@ namespace HotelBooking.mapping
             else
             {
                 // Convert the string value from the database to a DateOnly instance
-                return DateOnly.Parse((string)value);
+                return DateTime.Parse((string)value);
             }
         }
 
@@ -99,7 +99,7 @@ namespace HotelBooking.mapping
             else
             {
                 // Convert the DateOnly instance to a string to store in the database
-                parameter.Value = ((DateOnly)value).ToString("yyyy-MM-dd");
+                parameter.Value = ((DateTime)value).ToString("yyyy-MM-dd hh:mm");
             }
         }
 

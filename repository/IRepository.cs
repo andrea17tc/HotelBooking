@@ -9,14 +9,14 @@ namespace HotelBooking.repository
 {
     public interface IRepository<ID, E> where E : Entity<ID>
     {
-        E? findOne(ID id);
-        IEnumerable<E> findAll();
+        E? FindOne(ID id);
+        IEnumerable<E> FindAll();
 
-        void save(E entity);
+        void Save(E entity);
 
-        void delete(ID id);
+        void Delete(ID id);
 
-        void update(E entity);
+        void Update(E entity);
 
     }
 }

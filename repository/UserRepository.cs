@@ -21,12 +21,12 @@ namespace HotelBooking.repository
             this.sessionFactory =SessionFactory.BuildSessionFactory();
         }
 
-        public IEnumerable<User> findAll()
+        public IEnumerable<User> FindAll()
         {
             throw new NotImplementedException();
         }
 
-        public User? findOne(int id)
+        public User? FindOne(int id)
         {
             Log.Info("Finding user with id " + id);
             using (var session = sessionFactory.OpenSession())
@@ -34,7 +34,7 @@ namespace HotelBooking.repository
                 return session.Get<User>(id);
             }
         }
-        public User? findByUsername(string username)
+        public User? FindByUsername(string username)
         {
             Log.Info("Finding user with username " + username);
             using (var session = sessionFactory.OpenSession())
@@ -43,7 +43,7 @@ namespace HotelBooking.repository
             }
         }
 
-        public void save(User entity)
+        public void Save(User entity)
         {
             //save user to database
             Log.Info("Saving user with username " + entity.Username);
@@ -58,12 +58,12 @@ namespace HotelBooking.repository
 
         }
 
-        public void delete(int id)
+        public void Delete(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void update(User entity)
+        public void Update(User entity)
         {
             throw new NotImplementedException();
         }

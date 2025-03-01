@@ -20,7 +20,7 @@ namespace HotelBooking.repository
             Log.Info("Creating HotelRepository");
             this.sessionFactory = SessionFactory.BuildSessionFactory();
         }
-        public void delete(int id)
+        public void Delete(int id)
         {
             Log.Info("Deleting hotel with id " + id);
             using (var session = sessionFactory.OpenSession())
@@ -43,7 +43,7 @@ namespace HotelBooking.repository
             }
         }
 
-        public IEnumerable<Hotel> findAll()
+        public IEnumerable<Hotel> FindAll()
         {
             Log.Info("Finding all hotels");
             using (var session = sessionFactory.OpenSession())
@@ -52,7 +52,7 @@ namespace HotelBooking.repository
             }
         }
 
-        public Hotel? findOne(int id)
+        public Hotel? FindOne(int id)
         {
             Log.Info("Finding hotel with id " + id);
             using (var session = sessionFactory.OpenSession())
@@ -61,7 +61,7 @@ namespace HotelBooking.repository
             }
         }
 
-        public void save(Hotel entity)
+        public void Save(Hotel entity)
         {
             Log.Info("Saving hotel with name " + entity.Name);
             using (var session = sessionFactory.OpenSession())
@@ -74,7 +74,7 @@ namespace HotelBooking.repository
             }
         }
 
-        public void update(Hotel entity)
+        public void Update(Hotel entity)
         {
             Log.Info("Updating hotel with id " + entity.Id);
             using (var session = sessionFactory.OpenSession())

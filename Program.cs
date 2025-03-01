@@ -28,7 +28,8 @@ namespace HotelBooking
             UserRepository userRepository = new UserRepository();
             HotelRepository hotelRepository = new HotelRepository();
             OfferRepository offerRepository = new OfferRepository();
-            Service service = new Service(userRepository, hotelRepository, offerRepository);
+            ReservationRepository reservationRepository = new ReservationRepository();
+            Service service = new Service(userRepository, hotelRepository, offerRepository,reservationRepository);
             Application.Run(new Login(service));
             log.Info("Application ended");
         }

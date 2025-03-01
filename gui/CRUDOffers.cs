@@ -34,7 +34,7 @@ namespace HotelBooking
 
         public void CRUDOffers_Load()
         {
-            List<Offer> offers = service.FindAllOffers(hotelId);
+            List<Offer> offers = service.FindAllOffersByHotel(hotelId);
             dataGridView1.DataSource = offers;
             dataGridView1.Columns["Id"].Visible = false;
             dataGridView1.Columns["Hotel"].Visible = false;
@@ -47,10 +47,10 @@ namespace HotelBooking
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             //set datepicker to the value of selected row from column Start Date
-            DateOnly date = (DateOnly)dataGridView1.Rows[e.RowIndex].Cells[2].Value;
+            DateOnly date = (DateOnly)dataGridView1.Rows[e.RowIndex].Cells[3].Value;
             dateTimePicker1.Value = new DateTime(date.Year, date.Month, date.Day);
             dateTimePicker1.Update();
-            numericUpDown1.Value = (int)dataGridView1.Rows[e.RowIndex].Cells[3].Value;
+            numericUpDown1.Value = (int)dataGridView1.Rows[e.RowIndex].Cells[4].Value;
 
         }
 
@@ -68,18 +68,15 @@ namespace HotelBooking
             DateTime d = dateTimePicker1.Value;
             DateOnly date = new DateOnly(d.Year, d.Month, d.Day);
             int noNights = (int)numericUpDown1.Value;
-            int id = (int)dataGridView1.SelectedRows[0].Cells[4].Value;
+            int id = (int)dataGridView1.SelectedRows[0].Cells[5].Value;
             service.UpdateOffer(id, hotelId, date, noNights);
             CRUDOffers_Load();
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            DateTime d = dateTimePicker1.Value;
-            DateOnly date = new DateOnly(d.Year, d.Month, d.Day);
-            int noNights = (int)numericUpDown1.Value;
-            int id = (int)dataGridView1.SelectedRows[0].Cells[4].Value;
-            service.DeleteOffer(id,hotelId, date, noNights);
+            int id = (int)dataGridView1.SelectedRows[0].Cells[5].Value;
+            service.DeleteOffer(id);
             CRUDOffers_Load();
         }
 

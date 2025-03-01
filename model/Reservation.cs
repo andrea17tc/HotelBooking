@@ -11,40 +11,36 @@ public class Reservation : Entity<int>
     int userID;
     int offerID;
     DateTime date;
-    int noRooms;
 
     // Constructor
-    public Reservation(int userID, int offerID, DateTime date, int noRooms)
+    public Reservation(int userID, int offerID, DateTime date)
     {
         this.userID = userID;
         this.offerID = offerID;
         this.date = date;
-        this.noRooms = noRooms;
+    }
+
+    public Reservation()
+    {
     }
 
     // Getters and setters
-    public int UserID
+    public virtual int UserID
     {
         get { return userID; }
         set { userID = value; }
     }
 
-    public int OfferID
+    public virtual int OfferID
     {
         get { return offerID; }
         set { offerID = value; }
     }
 
-    public DateTime Date
+    public virtual DateTime Date
     {
         get { return date; }
         set { date = value; }
-    }
-
-    public int NoRooms
-    {
-        get { return noRooms; }
-        set { noRooms = value; }
     }
 
 }

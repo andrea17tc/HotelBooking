@@ -70,15 +70,20 @@ public class User : Entity<int>
         return $"{username}: {firstName} {lastName}";
     }
 
-    public override bool Equals(object obj)
+    public override bool Equals(object? obj)
     {
         if (this == obj)
             return true;
 
-        if (!(obj is User))
+        if (obj is not User)
             return false;
 
         User user = (User)obj;
         return Equals(Id, user.Id);
+    }
+
+    public override int GetHashCode()
+    {
+        throw new NotImplementedException();
     }
 }

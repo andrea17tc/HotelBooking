@@ -18,7 +18,7 @@ namespace HotelBooking
         {
             string username = textBoxUsername.Text;
             string password = textBoxPassword.Text;
-            int userId = service.login(username, password);
+            int userId = service.Login(username, password);
             if (userId != 0)
             {
                 Log.Info("Login successful");
@@ -27,7 +27,7 @@ namespace HotelBooking
                     CRUD crud = new CRUD();
                     crud.SetService(service);
                     crud.Show();
-                    this.Hide();
+                    //this.Hide();
                 }
                 else
                 {
@@ -35,7 +35,7 @@ namespace HotelBooking
                     userPage.SetUserId(userId);
                     userPage.SetService(service);
                     userPage.Show();
-                    this.Hide();
+                    //this.Hide();
                 }
             }
             else

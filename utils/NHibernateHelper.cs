@@ -14,7 +14,7 @@ namespace HotelBooking.utils
         {
             // Define your connection string
             var configuration = new NHibernate.Cfg.Configuration();
-            configuration.Configure("E:\\UBB\\ISS\\Project\\HotelBooking\\App.config"); // Load NHibernate configuration from a file
+            configuration.Configure("D:\\UBB\\Anul 2\\Sem 2\\ISS\\Project\\HotelBooking\\App.config"); // Load NHibernate configuration from a file
             string connectionString = configuration.GetProperty("connection.connection_string");
 
             // Configure NHibernate using Fluent NHibernate
@@ -24,7 +24,7 @@ namespace HotelBooking.utils
 
             // Import mappings from XML file
             Configuration nhConfig = fluentConfig.BuildConfiguration();
-            nhConfig.AddXmlFile("E:\\UBB\\ISS\\Project\\HotelBooking\\mapping\\Hotel.hbm.xml"); // Replace "path_to_Hotel_hbm.xml" with the actual path
+            nhConfig.AddXmlFile("D:\\UBB\\Anul 2\\Sem 2\\ISS\\Project\\HotelBooking\\mapping\\Hotel.hbm.xml"); // Replace "path_to_Hotel_hbm.xml" with the actual path
 
             // Build session factory
             return nhConfig.BuildSessionFactory();
